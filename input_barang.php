@@ -3,7 +3,7 @@ include ("koneksi.php");//fungsi untuk gabung file
 if(isset($_POST['simpan'])){
 	$query_input_barang="insert into barang(id_barang,nama,kategori_id,satuan_id)
 	values('".$_POST['id_barang']."',
-		   '".$_POST['nama']."',
+		   '".$_POST['Nama']."',
 		   '".$_POST['kategori_id']."',
 		   '".$_POST['satuan_id']."')"; 
 	$proses_data=mysql_query($query_input_barang);
